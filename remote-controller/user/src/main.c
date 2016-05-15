@@ -10,7 +10,7 @@ int main(void)
 	
 	while (1) {
 		LED_C13_OFF();
-		delay_s(1);
+		delay_s(5);
 		LED_C13_ON();
 		delay_ms(10);
 	}
