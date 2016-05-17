@@ -1,6 +1,6 @@
-#include "led_c13.h"
+#include "leds.h"
 
-struct gpio_dev led_c13 = {
+gpio_t led_c13 = {
 	.RCC_AHBPeriph = RCC_AHBPeriph_GPIOC,
 	
 	.port = GPIOC,

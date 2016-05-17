@@ -414,9 +414,14 @@
               <FilePath>..\user\src\main.c</FilePath>
             </File>
             <File>
-              <FileName>led_c13.c</FileName>
+              <FileName>leds.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\user\src\led_c13.c</FilePath>
+              <FilePath>..\user\src\leds.c</FilePath>
+            </File>
+            <File>
+              <FileName>uarts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\src\uarts.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -424,9 +429,14 @@
           <GroupName>user_inc</GroupName>
           <Files>
             <File>
-              <FileName>led_c13.h</FileName>
+              <FileName>leds.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\user\inc\led_c13.h</FilePath>
+              <FilePath>..\user\inc\leds.h</FilePath>
+            </File>
+            <File>
+              <FileName>uarts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\user\inc\uarts.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -438,6 +448,11 @@
               <FileType>1</FileType>
               <FilePath>..\drv\src\gpio_drv.c</FilePath>
             </File>
+            <File>
+              <FileName>uart_drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drv\src\uart_drv.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -447,6 +462,11 @@
               <FileName>gpio_drv.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\drv\inc\gpio_drv.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart_drv.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\drv\inc\uart_drv.h</FilePath>
             </File>
           </Files>
         </Group>

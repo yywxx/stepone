@@ -1,6 +1,6 @@
 #include "gpio_drv.h"
 
-void gpio_init(struct gpio_dev *dev)
+void gpio_init(gpio_t *dev)
 {
 	/* GPIOC Periph clock enable */
   RCC_AHBPeriphClockCmd(dev->RCC_AHBPeriph, ENABLE);
@@ -12,17 +12,17 @@ void gpio_init(struct gpio_dev *dev)
 	GPIO_WriteBit(dev->port, dev->attr.GPIO_Pin, (BitAction)dev->default_status);
 }
 
-void gpio_high(struct gpio_dev *dev)
+void gpio_high(gpio_t *dev)
 {
 	GPIO_SetBits(dev->port, dev->attr.GPIO_Pin);
 }
 
-void gpio_low(struct gpio_dev *dev)
+void gpio_low(gpio_t *dev)
 {
 	GPIO_ResetBits(dev->port, dev->attr.GPIO_Pin);
 }
 
-enum gpio_status get_gpio_status(struct gpio_dev *dev)
+enum gpio_status get_gpio_status(gpio_t *dev)
 {
 	if (dev->attr.GPIO_Mode == GPIO_Mode_IN) 
 		return (enum gpio_status)GPIO_ReadInputDataBit(dev->port, dev->attr.GPIO_Pin);
