@@ -20,23 +20,11 @@
 
 >> 业务逻辑以及外设描述
 
+>>> 比如串口设备、GPIO设备等
+
 > ### user_lib
 
 >> 自定义函数库
 
-.
-├─drv
-│  ├─inc
-│  └─src
-├─lib
-│  ├─inc
-│  └─src
-├─proj
-│  ├─Listings
-│  └─Objects
-├─user
-│  ├─inc
-│  └─src
-└─user_lib
-    ├─user_lib_inc
-    └─user_lib_src
+----------------
+
