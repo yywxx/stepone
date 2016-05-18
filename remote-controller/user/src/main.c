@@ -9,10 +9,9 @@ int main(void)
 	delay_init(48);
 	gpio_init(&led_c13);
 	
-//	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
 	uart_init(&uart_1, 115200);
 	 
-//  GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_1);   
+  /* Add something */
 	
 	
 	while (1) {
